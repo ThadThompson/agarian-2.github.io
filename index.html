@@ -7,9 +7,9 @@
     <meta name="description" content="An agar.io client made for MultiOgar based servers.">
     <meta name="keywords" content="agario, agar, io, cell, cells, virus, bacteria, blob, game, games, web game, html5, fun, flash">
     <meta name="robots" content="index, follow">
-    <meta property="og:image" content="http://agar.io/img/1200x630.png" />
+    <!-- <meta property="og:image" content="http://agar.io/img/1200x630.png" />
     <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:height" content="630" /> -->
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>MultiOgar Client</title>
@@ -51,11 +51,11 @@
                 </div>
                 <div class="form-group">
                     <input id="nick" class="form-control save" data-box-id="0" placeholder="Nick" maxlength="15" />
-                    <select id="gamemode" class="form-control" onchange="setServer($(this).val());" required>
+                    <!-- <select id="gamemode" class="form-control" onchange="setServer($(this).val());" required>
                         <option selected disabled>Servers:</option>
                         <option value="127.0.0.1:443">Local 443</option>
                         <option value="woomy-arras.io:4005">My MultiOgar</option>
-                    </select>
+                    </select> -->
                     <br clear="both" />
                 </div>
                 <div class="form-group">
@@ -133,11 +133,11 @@
             <div id="footer">
                 <hr/>
                 <!--p><b>Important Links:</b></p-->
-                <a href="https://github.com/OgarProject/Ogar" class="text-muted" target="_blank">GitHub - Ogar Project</a><br>
+                <!-- <a href="https://github.com/OgarProject/Ogar" class="text-muted" target="_blank">GitHub - Ogar Project</a><br>
                 <a href="https://github.com/Barbosik/MultiOgar" class="text-muted" target="_blank">GitHub - MultiOgar</a><br>
                 <a href="https://github.com/Megabyte918/MultiOgar-Edited" class="text-muted" target="_blank">GitHub - MultiOgar Edited</a><br>
                 <a href="https://github.com/CigarProject/Cigar" class="text-muted" target="_blank">GitHub - CigarProject</a><br>
-                <a href="https://github.com/Agarian/Ogar-unlimited" class="text-muted" target="_blank">GitHub - Ogar Unlimited</a>
+                <a href="https://github.com/Agarian/Ogar-unlimited" class="text-muted" target="_blank">GitHub - Ogar Unlimited</a> -->
             </div>
         </div>
     </div>
@@ -151,5 +151,9 @@
     <input type="text" id="chat_textbox" placeholder="Press enter to chat" maxlength="200" />
     <div style="font-family:'Ubuntu'">&nbsp;</div>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        //setServer(`${location.hostname}:4430`);
+        setServer(location);
+    </script>
 </body>
 </html>
